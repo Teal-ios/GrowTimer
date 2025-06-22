@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,9 @@
 		48209CAB561073BF7B52F930 /* Thema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED18A343BB5D05A1372C7B /* Thema.swift */; };
 		4A70FCBD6490227B914F0BD3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B986F61084D538252FF68FE8 /* Color.swift */; };
 		622533857E0A04FBCC5AD4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11519A6162870140692B04E6 /* Assets.xcassets */; };
+		6A41024A3C283ABCEEC8B5C3 /* UhBeeBEOJJIBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 210727DAD1241BAE44701D53 /* UhBeeBEOJJIBold.ttf */; };
 		8081F39D126E336E23CD650E /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97DEE810CCC70A2646E9705 /* Reusable.swift */; };
+		82CFE746EE3B87C39B191D5E /* UhBeeBEOJJI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBBD9038A751195A9E9F298C /* UhBeeBEOJJI.ttf */; };
 		82E106CE9C755F5C1C9D0080 /* ThirdPartyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA9E89FEB58ADE454BF0BC5 /* ThirdPartyLibrary.framework */; };
 		86658B563C21F49740900508 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE83F3E6C7699DE8B4B889 /* BaseViewController.swift */; };
 		89C354B8B4A2561ABC441A2A /* FontThema.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7E7A8936E709A82C18BAEB /* FontThema.swift */; };
@@ -24,11 +26,9 @@
 		B3BBA9715BF3E265E75A9478 /* GwangwonEduAll-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68B74AC1729750413760672D /* GwangwonEduAll-Bold.otf */; };
 		B4015A93CC86F54C3B97724F /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04E264DF1B680FEC62E0BE /* BaseCollectionViewCell.swift */; };
 		B59633EB81C20431E23874D5 /* DesignSystemModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8244D617982D8224603BE09 /* DesignSystemModule.swift */; };
-		C0855C0A2DC860A01F7361E3 /* UhBeeBEOJJI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03AFC0925A704856AE3D6D55 /* UhBeeBEOJJI.ttf */; };
 		C438E92FA9121880084AE9AA /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B7BBEAD5472C7195924AC8 /* DesignSystem.framework */; };
 		C80901BAEB8E2B031C9611F9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D56B25C75A1E3190DBFF05 /* BaseView.swift */; };
 		CBBC99B35B12602ED84B9B9A /* CircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0E6BE5B9FD961D44303FCC /* CircularProgress.swift */; };
-		EB90794A4A1811BF8C86DDB4 /* UhBeeBEOJJIBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49E2F3705E4D74E6FE0DD156 /* UhBeeBEOJJIBold.ttf */; };
 		EEEE053BBE631ED0FB64BDFB /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662412BC116B0F0F76D8C6A9 /* Font.swift */; };
 		F3C9FD2B222B73DF293868D2 /* FontRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A851E38823A8D5C7A621A351 /* FontRegistration.swift */; };
 		F6018B5F7748E322214C52D6 /* TuistBundle+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AD9735556ECA8C8008FEC /* TuistBundle+DesignSystem.swift */; };
@@ -69,14 +69,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03AFC0925A704856AE3D6D55 /* UhBeeBEOJJI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhBeeBEOJJI.ttf; sourceTree = "<group>"; };
-		095B9A99B05C71119D941B09 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		095B9A99B05C71119D941B09 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
 		0EEDE689080917EDEDAB3B45 /* SimKyungha.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimKyungha.otf; sourceTree = "<group>"; };
 		11519A6162870140692B04E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1489E7809DA4DADA471C2CDC /* TuistFonts+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistFonts+DesignSystem.swift"; sourceTree = "<group>"; };
 		1CA9E89FEB58ADE454BF0BC5 /* ThirdPartyLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		210727DAD1241BAE44701D53 /* UhBeeBEOJJIBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhBeeBEOJJIBold.ttf; sourceTree = "<group>"; };
 		469F4B641DBB710B1B90BAD8 /* DesignSystemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DesignSystemTests-Info.plist"; sourceTree = "<group>"; };
-		49E2F3705E4D74E6FE0DD156 /* UhBeeBEOJJIBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhBeeBEOJJIBold.ttf; sourceTree = "<group>"; };
 		518272FB82D2FA3AE57FF3B6 /* LeeSeoyun.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeeSeoyun.otf; sourceTree = "<group>"; };
 		662412BC116B0F0F76D8C6A9 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		68B74AC1729750413760672D /* GwangwonEduAll-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GwangwonEduAll-Bold.otf"; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 		B97DEE810CCC70A2646E9705 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		B986F61084D538252FF68FE8 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		B9D56B25C75A1E3190DBFF05 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		BBBD9038A751195A9E9F298C /* UhBeeBEOJJI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhBeeBEOJJI.ttf; sourceTree = "<group>"; };
 		BC7E7A8936E709A82C18BAEB /* FontThema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontThema.swift; sourceTree = "<group>"; };
 		BE4AD9735556ECA8C8008FEC /* TuistBundle+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+DesignSystem.swift"; sourceTree = "<group>"; };
 		DF0E6BE5B9FD961D44303FCC /* CircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 		0F57F47C2D6FFD75C761BE24 /* UhBeeFont */ = {
 			isa = PBXGroup;
 			children = (
-				49E2F3705E4D74E6FE0DD156 /* UhBeeBEOJJIBold.ttf */,
-				03AFC0925A704856AE3D6D55 /* UhBeeBEOJJI.ttf */,
+				BBBD9038A751195A9E9F298C /* UhBeeBEOJJI.ttf */,
+				210727DAD1241BAE44701D53 /* UhBeeBEOJJIBold.ttf */,
 			);
 			path = UhBeeFont;
 			sourceTree = "<group>";
@@ -380,8 +380,8 @@
 				B3BBA9715BF3E265E75A9478 /* GwangwonEduAll-Bold.otf in Resources */,
 				1EE4164BE4341D7B4A0FE8E6 /* SimKyungha.otf in Resources */,
 				047BD44AE88ED528EB57034B /* LeeSeoyun.otf in Resources */,
-				EB90794A4A1811BF8C86DDB4 /* UhBeeBEOJJIBold.ttf in Resources */,
-				C0855C0A2DC860A01F7361E3 /* UhBeeBEOJJI.ttf in Resources */,
+				82CFE746EE3B87C39B191D5E /* UhBeeBEOJJI.ttf in Resources */,
+				6A41024A3C283ABCEEC8B5C3 /* UhBeeBEOJJIBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +455,10 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -482,7 +485,10 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;

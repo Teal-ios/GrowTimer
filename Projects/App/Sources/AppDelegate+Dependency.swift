@@ -17,18 +17,18 @@ import Domain
 
 extension AppDelegate {
     func registerDependencies() {
-        DIContainer.register(FeatureProviderImplement(), type: FeatureProvider.self)
+        DIContainer.register(FeatureProvider.self, FeatureProviderImplement())
         FontRegistration.registerFonts()
-        DIContainer.register(CoreDataRepositoryImpl(userStorage: .userStorage, themaStorage: .themaStorage, fontStorage: .fontStorage, coinStorage: .coinStorage), type: CoreDataRepository.self)
-        DIContainer.register(CoreDataUseCase(), type: CoreDataUseCaseInterface.self)
-        DIContainer.register(CoinRepositoryImpl(coinStorage: .coinStorage), type: CoinRepository.self)
-        DIContainer.register(CoinUseCase(), type: CoinUseCaseInterface.self)
-        DIContainer.register(UserRepositoryImpl(userStorage: .userStorage), type: UserRepository.self)
-        DIContainer.register(UserUseCase(), type: UserUseCaseInterface.self)
-        DIContainer.register(FontRepositoryImpl(fontStorage: .fontStorage), type: FontRepository.self)
-        DIContainer.register(FontUseCase(), type: FontUseCaseInterface.self)
+        DIContainer.register(CoreDataRepository.self, CoreDataRepositoryImpl(userStorage: .userStorage, themaStorage: .themaStorage, fontStorage: .fontStorage, coinStorage: .coinStorage))
+        DIContainer.register(CoreDataUseCaseInterface.self, CoreDataUseCase())
+        DIContainer.register(CoinRepository.self, CoinRepositoryImpl(coinStorage: .coinStorage))
+        DIContainer.register(CoinUseCaseInterface.self, CoinUseCase())
+        DIContainer.register(UserRepository.self, UserRepositoryImpl(userStorage: .userStorage))
+        DIContainer.register(UserUseCaseInterface.self, UserUseCase())
+        DIContainer.register(FontRepository.self, FontRepositoryImpl(fontStorage: .fontStorage))
+        DIContainer.register(FontUseCaseInterface.self, FontUseCase())
         
-        DIContainer.register(ThemaRepositoryImpl(themaStorage: .themaStorage), type: ThemaRepository.self)
-        DIContainer.register(ThemaUseCase(), type: ThemaUseCaseInterface.self)
+        DIContainer.register(ThemaRepository.self, ThemaRepositoryImpl(themaStorage: .themaStorage))
+        DIContainer.register(ThemaUseCaseInterface.self, ThemaUseCase())
     }
 }

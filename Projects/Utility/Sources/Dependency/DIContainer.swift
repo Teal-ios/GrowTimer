@@ -9,23 +9,34 @@
 import Foundation
 
 public enum DIContainer {
-    private static var storage = [String: Any]()
+    private static var storage = [String: () -> Any]()
+    private static var cachedInstances = [String: Any]()
     
-    public static func register<T>(_ value: T, type: T.Type) {
-        storage["\(type)"] = value
+    public static func register<T>(_ type: T.Type, _ factory: @escaping @autoclosure () -> T) {
+        storage["\(type)"] = factory
+        cachedInstances.removeValue(forKey: "\(type)")
     }
     
     @discardableResult
     public static func resolve<T>(type: T.Type) -> T {
-        guard let value = storage["\(type)"] as? T else {
+        let key = "\(type)"
+        
+        if let cachedInstance = cachedInstances[key] as? T {
+            return cachedInstance
+        }
+        
+        guard let factory = storage[key], let newInstance = factory() as? T else {
             fatalError("등록되지 않은 객체 호출: \(type)")
         }
-        return value
+        
+        cachedInstances[key] = newInstance
+        
+        return newInstance
     }
 }
 
 extension DIContainer {
-    public static var originalStorage: [String: Any] = [:]
+    public static var originalStorage: [String: () -> Any] = [:]
     
     public static func setupForTesting() {
         // 원본 저장소 백업
@@ -37,6 +48,7 @@ extension DIContainer {
     public static func tearDownTesting() {
         // 원본 저장소 복원
         storage = originalStorage
+        cachedInstances = [:] // 캐시된 인스턴스도 초기화
         originalStorage = [:]
     }
 }

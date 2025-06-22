@@ -11,7 +11,7 @@ import Foundation
 import Utility
 
 import XCTest
-@testable import Domain // 모듈명은 실제 프로젝트 구조에 맞게 수정하세요
+@testable import Domain
 
 class UserUseCaseTests: XCTestCase {
     
@@ -22,16 +22,9 @@ class UserUseCaseTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        DIContainer.setupForTesting()
-        
-        mockRepository = MockUserRepository()
-        
-        DIContainer.register(mockRepository, type: UserRepository.self)
-        
-        sut = UserUseCase()
-                
-        // 테스트를 위해 의존성 주입 - 실제 구현에 맞게 수정 필요
-        // 예: DependencyContainer 사용 또는 프로퍼티 주입
+        self.mockRepository = MockUserRepository()
+        self.sut = DefaultUserUseCase(repository: self.mockRepository)
+        DIContainer.register(UserRepository.self, mockRepository)
     }
     
     override func tearDown() {

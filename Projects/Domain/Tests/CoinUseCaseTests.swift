@@ -22,11 +22,11 @@ class CoinUseCaseTests: XCTestCase {
         // DIContainer 초기화 및 Mock 등록
         DIContainer.setupForTesting()
         
-        mockRepository = MockCoinRepository()
+        self.mockRepository = MockCoinRepository()
         
-        DIContainer.register(mockRepository, type: CoinRepository.self)
+        self.sut = DefaultCoinUseCase(repository: self.mockRepository)
         
-        sut = CoinUseCase()
+        DIContainer.register(CoinRepository.self, mockRepository)
     }
     
     override func tearDown() {
@@ -96,7 +96,7 @@ class CoinUseCaseTests: XCTestCase {
             (100, "처음 출석하셨습니다."),
             (101, "정해진 시간을 완료하셨습니다."),
             (401, "몽환적 솜사탕 테마💜를 구입하셨습니다."),
-            (999, "입력되지 않은 상태코드입니다.") // 기본값 케이스
+            (999, "입력되지 않은 상태코드입니다.")
         ]
         
         for (status, expectedExplanation) in testCases {

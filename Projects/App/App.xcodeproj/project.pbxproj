@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		004FD1E183A2F52A4913C9DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7210F22777D23AD1713BCADE /* AppDelegate.swift */; };
+		090F1FF729CB10C6CC442AF1 /* GwangwonEduAll-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83A3BF2B48E19D4A61483DDC /* GwangwonEduAll-Bold.otf */; };
 		0F3EBD548A92D7401B1FC633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057A3CD8D734F9C1B4948C18 /* LaunchScreen.storyboard */; };
 		282F82E38510973CDCB21C94 /* GTToast.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 080F16D5E74174B3B81BD108 /* GTToast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B4C00BB36C9236A58AB9F1D /* FeatureImplement.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5DF8D74B2DAA1291B6F43D /* FeatureImplement.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D1ABB7064D689557D36340D /* UhBeeBEOJJIBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1664CDC3F463E0405111EF63 /* UhBeeBEOJJIBold.ttf */; };
 		2E743A6F76CCB6064D781210 /* TuistAssets+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D529DAAF6A9D59C44D9D68 /* TuistAssets+App.swift */; };
+		3A43A30DD90B29AEC079340D /* LeeSeoyun.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3159154FA05B485BF60A078 /* LeeSeoyun.otf */; };
+		43AA562FAB7754E6531086F9 /* TuistFonts+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2688DE2A1F07D37DE66004 /* TuistFonts+App.swift */; };
 		45E91EF0B69A751733DA6FA5 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = DE4569834806C4EDCF0FE3F7 /* .gitkeep */; };
 		4787DFDD71F731243F3587AF /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEB75E9463ACE494A73BD36 /* Domain.framework */; };
 		48469C5111BF762561C9B9B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7F83A194E1D17030DCA033 /* Assets.xcassets */; };
+		636E6E9C9D44424850F6025E /* UhBeeBEOJJI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 834B8FD0E6BB0128A128B7E2 /* UhBeeBEOJJI.ttf */; };
 		64FC118FC34117F18778866F /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9B88D186B6DE8ED12580E6 /* Utility.framework */; };
 		70F3CF0BB9F240B2A59853E0 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9369BFA2C65412102538303 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		791E438F57DB6775DD4A8170 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEB75E9463ACE494A73BD36 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -24,14 +29,10 @@
 		973CFA914BDC440591B7B378 /* ThirdPartyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B654558C712AEBAEF8CE5540 /* ThirdPartyLibrary.framework */; };
 		9D985A27DDDF3A6AC09E09AE /* FeatureInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7601F2DA0D61813400063B1 /* FeatureInterface.framework */; };
 		9E6569B360C5040FD4C8A7FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED69542D699D2104EE8BFC4 /* SceneDelegate.swift */; };
+		A67A04535462B5119F82A3D6 /* SimKyungha.otf in Resources */ = {isa = PBXBuildFile; fileRef = 654D033C9F28FD6F9209B044 /* SimKyungha.otf */; };
 		B493D067AC897BE439C631AC /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF7E105F5FEC83A7A47F2E7 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B58D9B822748427158A08756 /* FeatureImplement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5DF8D74B2DAA1291B6F43D /* FeatureImplement.framework */; };
 		B69AD01B9D178AF891EFC977 /* AppDelegate+Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7526F6C0FAAE76280056CB /* AppDelegate+Dependency.swift */; };
-		B7CD515C2DD75EFA008B6D4F /* SimKyungha.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7CD51542DD75EFA008B6D4F /* SimKyungha.otf */; };
-		B7CD515D2DD75EFA008B6D4F /* UhBeeBEOJJIBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7CD51582DD75EFA008B6D4F /* UhBeeBEOJJIBold.ttf */; };
-		B7CD515E2DD75EFA008B6D4F /* LeeSeoyun.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7CD51562DD75EFA008B6D4F /* LeeSeoyun.otf */; };
-		B7CD515F2DD75EFA008B6D4F /* UhBeeBEOJJI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7CD51592DD75EFA008B6D4F /* UhBeeBEOJJI.ttf */; };
-		B7CD51602DD75EFA008B6D4F /* GwangwonEduAll-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7CD51522DD75EFA008B6D4F /* GwangwonEduAll-Bold.otf */; };
 		CC412D1A7BB481EC160867FC /* Present.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6EA0B43A2344E468E3C43E /* Present.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DFBC12E9778362A689AF58B6 /* FeatureInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7601F2DA0D61813400063B1 /* FeatureInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F343BFC34A1F6F392C331803 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF7E105F5FEC83A7A47F2E7 /* Data.framework */; };
@@ -87,23 +88,24 @@
 		080F16D5E74174B3B81BD108 /* GTToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		083CD4D343ECF7F321C1905D /* TuistBundle+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+App.swift"; sourceTree = "<group>"; };
 		0A6EA0B43A2344E468E3C43E /* Present.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Present.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1664CDC3F463E0405111EF63 /* UhBeeBEOJJIBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhBeeBEOJJIBold.ttf; sourceTree = "<group>"; };
 		1ED69542D699D2104EE8BFC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		571E08A9083FD4334E4B7D06 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2688DE2A1F07D37DE66004 /* TuistFonts+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistFonts+App.swift"; sourceTree = "<group>"; };
+		654D033C9F28FD6F9209B044 /* SimKyungha.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimKyungha.otf; sourceTree = "<group>"; };
 		6BEB75E9463ACE494A73BD36 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7210F22777D23AD1713BCADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F5DF8D74B2DAA1291B6F43D /* FeatureImplement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureImplement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		834B8FD0E6BB0128A128B7E2 /* UhBeeBEOJJI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhBeeBEOJJI.ttf; sourceTree = "<group>"; };
+		83A3BF2B48E19D4A61483DDC /* GwangwonEduAll-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GwangwonEduAll-Bold.otf"; sourceTree = "<group>"; };
 		8AF7E105F5FEC83A7A47F2E7 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7F83A194E1D17030DCA033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95D529DAAF6A9D59C44D9D68 /* TuistAssets+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+App.swift"; sourceTree = "<group>"; };
 		AB7526F6C0FAAE76280056CB /* AppDelegate+Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Dependency.swift"; sourceTree = "<group>"; };
 		AD9B88D186B6DE8ED12580E6 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B654558C712AEBAEF8CE5540 /* ThirdPartyLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7CD51522DD75EFA008B6D4F /* GwangwonEduAll-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GwangwonEduAll-Bold.otf"; sourceTree = "<group>"; };
-		B7CD51542DD75EFA008B6D4F /* SimKyungha.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimKyungha.otf; sourceTree = "<group>"; };
-		B7CD51562DD75EFA008B6D4F /* LeeSeoyun.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeeSeoyun.otf; sourceTree = "<group>"; };
-		B7CD51582DD75EFA008B6D4F /* UhBeeBEOJJIBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhBeeBEOJJIBold.ttf; sourceTree = "<group>"; };
-		B7CD51592DD75EFA008B6D4F /* UhBeeBEOJJI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhBeeBEOJJI.ttf; sourceTree = "<group>"; };
 		BAFF060C3D8E68253DF6AABA /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3159154FA05B485BF60A078 /* LeeSeoyun.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeeSeoyun.otf; sourceTree = "<group>"; };
 		D7601F2DA0D61813400063B1 /* FeatureInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4569834806C4EDCF0FE3F7 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		E9369BFA2C65412102538303 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,12 +136,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033D1433FD6E51F71A9AA9EE /* KunghaFont */ = {
+			isa = PBXGroup;
+			children = (
+				654D033C9F28FD6F9209B044 /* SimKyungha.otf */,
+			);
+			path = KunghaFont;
+			sourceTree = "<group>";
+		};
 		4102E3E068508DD683953C7D = {
 			isa = PBXGroup;
 			children = (
 				52611B11A5E6A7198C4E57A3 /* Project */,
 				E9C3DB3EC6D7655028A9C0D3 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		436E5E2D4F9C90E048D2AE14 /* UhBeeFont */ = {
+			isa = PBXGroup;
+			children = (
+				834B8FD0E6BB0128A128B7E2 /* UhBeeBEOJJI.ttf */,
+				1664CDC3F463E0405111EF63 /* UhBeeBEOJJIBold.ttf */,
+			);
+			path = UhBeeFont;
 			sourceTree = "<group>";
 		};
 		52611B11A5E6A7198C4E57A3 /* Project */ = {
@@ -155,7 +174,7 @@
 		62EFB15EC88C1D2636544B42 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B7CD515B2DD75EFA008B6D4F /* Font */,
+				81E8ECE1487BED79DAFF5484 /* Font */,
 				DE4569834806C4EDCF0FE3F7 /* .gitkeep */,
 				8F7F83A194E1D17030DCA033 /* Assets.xcassets */,
 				057A3CD8D734F9C1B4948C18 /* LaunchScreen.storyboard */,
@@ -170,6 +189,17 @@
 				05C205C150A8B60F0BF50551 /* AppTests-Info.plist */,
 			);
 			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		81E8ECE1487BED79DAFF5484 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				9505F0C0E68B77E91D3DA205 /* GangwonFont */,
+				033D1433FD6E51F71A9AA9EE /* KunghaFont */,
+				9670BADDA17C52A137221230 /* SeoyunFont */,
+				436E5E2D4F9C90E048D2AE14 /* UhBeeFont */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		858C4E433DBF0294DFED1B0C /* Sources */ = {
@@ -187,8 +217,25 @@
 			children = (
 				95D529DAAF6A9D59C44D9D68 /* TuistAssets+App.swift */,
 				083CD4D343ECF7F321C1905D /* TuistBundle+App.swift */,
+				5F2688DE2A1F07D37DE66004 /* TuistFonts+App.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		9505F0C0E68B77E91D3DA205 /* GangwonFont */ = {
+			isa = PBXGroup;
+			children = (
+				83A3BF2B48E19D4A61483DDC /* GwangwonEduAll-Bold.otf */,
+			);
+			path = GangwonFont;
+			sourceTree = "<group>";
+		};
+		9670BADDA17C52A137221230 /* SeoyunFont */ = {
+			isa = PBXGroup;
+			children = (
+				D3159154FA05B485BF60A078 /* LeeSeoyun.otf */,
+			);
+			path = SeoyunFont;
 			sourceTree = "<group>";
 		};
 		B3BCDE38B26B330C9A04FADE /* Derived */ = {
@@ -198,50 +245,6 @@
 				8919B428B639C6AF4BBFE002 /* Sources */,
 			);
 			path = Derived;
-			sourceTree = "<group>";
-		};
-		B7CD51532DD75EFA008B6D4F /* GangwonFont */ = {
-			isa = PBXGroup;
-			children = (
-				B7CD51522DD75EFA008B6D4F /* GwangwonEduAll-Bold.otf */,
-			);
-			path = GangwonFont;
-			sourceTree = "<group>";
-		};
-		B7CD51552DD75EFA008B6D4F /* KunghaFont */ = {
-			isa = PBXGroup;
-			children = (
-				B7CD51542DD75EFA008B6D4F /* SimKyungha.otf */,
-			);
-			path = KunghaFont;
-			sourceTree = "<group>";
-		};
-		B7CD51572DD75EFA008B6D4F /* SeoyunFont */ = {
-			isa = PBXGroup;
-			children = (
-				B7CD51562DD75EFA008B6D4F /* LeeSeoyun.otf */,
-			);
-			path = SeoyunFont;
-			sourceTree = "<group>";
-		};
-		B7CD515A2DD75EFA008B6D4F /* UhBeeFont */ = {
-			isa = PBXGroup;
-			children = (
-				B7CD51582DD75EFA008B6D4F /* UhBeeBEOJJIBold.ttf */,
-				B7CD51592DD75EFA008B6D4F /* UhBeeBEOJJI.ttf */,
-			);
-			path = UhBeeFont;
-			sourceTree = "<group>";
-		};
-		B7CD515B2DD75EFA008B6D4F /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				B7CD51532DD75EFA008B6D4F /* GangwonFont */,
-				B7CD51552DD75EFA008B6D4F /* KunghaFont */,
-				B7CD51572DD75EFA008B6D4F /* SeoyunFont */,
-				B7CD515A2DD75EFA008B6D4F /* UhBeeFont */,
-			);
-			path = Font;
 			sourceTree = "<group>";
 		};
 		E9C3DB3EC6D7655028A9C0D3 /* Products */ = {
@@ -350,13 +353,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7CD515C2DD75EFA008B6D4F /* SimKyungha.otf in Resources */,
-				B7CD515D2DD75EFA008B6D4F /* UhBeeBEOJJIBold.ttf in Resources */,
-				B7CD515E2DD75EFA008B6D4F /* LeeSeoyun.otf in Resources */,
-				B7CD515F2DD75EFA008B6D4F /* UhBeeBEOJJI.ttf in Resources */,
-				B7CD51602DD75EFA008B6D4F /* GwangwonEduAll-Bold.otf in Resources */,
 				45E91EF0B69A751733DA6FA5 /* .gitkeep in Resources */,
 				48469C5111BF762561C9B9B6 /* Assets.xcassets in Resources */,
+				090F1FF729CB10C6CC442AF1 /* GwangwonEduAll-Bold.otf in Resources */,
+				A67A04535462B5119F82A3D6 /* SimKyungha.otf in Resources */,
+				3A43A30DD90B29AEC079340D /* LeeSeoyun.otf in Resources */,
+				636E6E9C9D44424850F6025E /* UhBeeBEOJJI.ttf in Resources */,
+				2D1ABB7064D689557D36340D /* UhBeeBEOJJIBold.ttf in Resources */,
 				0F3EBD548A92D7401B1FC633 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +373,7 @@
 			files = (
 				2E743A6F76CCB6064D781210 /* TuistAssets+App.swift in Sources */,
 				FE078F42728C23B77EE02A1B /* TuistBundle+App.swift in Sources */,
+				43AA562FAB7754E6531086F9 /* TuistFonts+App.swift in Sources */,
 				B69AD01B9D178AF891EFC977 /* AppDelegate+Dependency.swift in Sources */,
 				004FD1E183A2F52A4913C9DB /* AppDelegate.swift in Sources */,
 				9E6569B360C5040FD4C8A7FA /* SceneDelegate.swift in Sources */,
@@ -420,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = LL4R66V6Y3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Derived/InfoPlists/App-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -527,6 +532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = LL4R66V6Y3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Derived/InfoPlists/App-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;

@@ -23,8 +23,8 @@ class UserUseCaseTests: XCTestCase {
         super.setUp()
         
         self.mockRepository = MockUserRepository()
-        self.sut = DefaultUserUseCase(repository: self.mockRepository)
-        DIContainer.register(UserRepository.self, mockRepository)
+        self.sut = UserUseCase()
+        DIContainer.register(UserRepository.self, self.mockRepository)
     }
     
     override func tearDown() {

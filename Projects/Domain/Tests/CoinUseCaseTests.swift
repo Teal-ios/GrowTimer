@@ -9,6 +9,7 @@ import Foundation
 import Utility
 import XCTest
 @testable import Domain
+import RxSwift
 
 class CoinUseCaseTests: XCTestCase {
 
@@ -24,9 +25,9 @@ class CoinUseCaseTests: XCTestCase {
         
         self.mockRepository = MockCoinRepository()
         
-        self.sut = DefaultCoinUseCase(repository: self.mockRepository)
+        self.sut = CoinUseCase()
         
-        DIContainer.register(CoinRepository.self, mockRepository)
+        DIContainer.register(CoinRepository.self, self.mockRepository)
     }
     
     override func tearDown() {

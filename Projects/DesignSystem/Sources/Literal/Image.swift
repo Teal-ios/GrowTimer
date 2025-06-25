@@ -19,31 +19,31 @@ fileprivate enum ImageNameSpace {
 }
 public extension UIImage {
     static var appleTree: UIImage {
-        UIImage(named: ImageNameSpace.appleTree, in: .module, compatibleWith: nil)!
+        UIImage(named: ImageNameSpace.appleTree, in: Bundle.module, compatibleWith: nil)!
     }
     
     static var apple: UIImage {
-        UIImage(named: ImageNameSpace.apple, in: .module, compatibleWith: nil)!
+        UIImage(named: ImageNameSpace.apple, in: Bundle.module, compatibleWith: nil)!
     }
     
     static var appletreeDie: UIImage {
-        UIImage(named: ImageNameSpace.appletreeDie, in: .module, compatibleWith: nil)!
+        UIImage(named: ImageNameSpace.appletreeDie, in: Bundle.module, compatibleWith: nil)!
     }
     
     static var blossom: UIImage {
-        UIImage(named: ImageNameSpace.blossom, in: .module, compatibleWith: nil)!
+        UIImage(named: ImageNameSpace.blossom, in: Bundle.module, compatibleWith: nil)!
     }
     
     static var dollor: UIImage {
-        UIImage(named: ImageNameSpace.dollor, in: .module, compatibleWith: nil)!
+        UIImage(named: ImageNameSpace.dollor, in: Bundle.module, compatibleWith: nil)!
     }
     
     static var seeds: UIImage {
-        UIImage(named: ImageNameSpace.seeds, in: .module, compatibleWith: nil) ?? UIImage(systemName: "heart.fill")!
+        UIImage(named: ImageNameSpace.seeds, in: Bundle.module, compatibleWith: nil) ?? UIImage(systemName: "heart.fill")!
     }
     
     static var sprout: UIImage {
-        UIImage(named: ImageNameSpace.sprout, in: .module, compatibleWith: nil)!
+        UIImage(named: ImageNameSpace.sprout, in: Bundle.module, compatibleWith: nil)!
     }
     
     static var calendar: UIImage {

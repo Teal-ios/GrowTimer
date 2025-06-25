@@ -50,7 +50,7 @@ public final class CoreDataStorage {
        
        // 여러 번들에서 모델 파일 찾기 시도
        var container: NSPersistentContainer?
-       let bundles = [Bundle(for: type(of: self)), Bundle.main]
+       let bundles = [Bundle.module, Bundle.main]
        
        for bundle in bundles {
            if let modelURL = bundle.url(forResource: modelName, withExtension: "momd") {

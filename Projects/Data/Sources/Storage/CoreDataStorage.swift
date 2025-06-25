@@ -192,8 +192,7 @@ public final class CoreDataStorage {
    }
    
    // MARK: - 백그라운드 작업
-   
-   // 백그라운드에서 저장 작업 수행
+   // 백그라운드에서 저장 작업 수행 메서드
    func performBackgroundTask(_ block: @escaping (NSManagedObjectContext) -> Void) {
        container.performBackgroundTask { context in
            block(context)

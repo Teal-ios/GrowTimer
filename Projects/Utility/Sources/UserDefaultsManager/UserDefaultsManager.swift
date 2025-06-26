@@ -35,6 +35,7 @@ public struct UserDefaultManager {
         case timerRunning
         case engagedTime
         case stopCount
+        case hasSeenFirstPageOnboarding
     }
 
     @UserDefault(key: UserDefaultsManagerKeys.thema.rawValue, defaultValue: 0)
@@ -57,5 +58,8 @@ public struct UserDefaultManager {
     
     @UserDefault(key: UserDefaultsManagerKeys.stopCount.rawValue, defaultValue: 3)
     public static var stopCount: Int
+    
+    @UserDefault(key: UserDefaultsManagerKeys.hasSeenFirstPageOnboarding.rawValue, defaultValue: false)
+    public static var hasSeenFirstPageOnboarding: Bool
 }
 

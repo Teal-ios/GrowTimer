@@ -20,6 +20,8 @@ final class PageNationViewController: UIPageViewController {
     
     var disposeBag = DisposeBag()
     
+    private var onboardingView: UIView?
+    
     lazy var navigationView: UIView = {
         let view = UIView()
         view.backgroundColor = ThemaManager.shared.mainColor
@@ -65,7 +67,10 @@ final class PageNationViewController: UIPageViewController {
         configure()
         setupDelegate()
         
-
+        // 온보딩 가이드 최초 1회 노출
+        if !UserDefaultManager.hasSeenFirstPageOnboarding {
+            showOnboardingGuide()
+        }
     }
     
     
@@ -96,6 +101,85 @@ final class PageNationViewController: UIPageViewController {
         pageViewController.delegate = self
     }
 
+    private func showOnboardingGuide() {
+        print("[디버깅] PageNationViewController showOnboardingGuide 호출")
+        guard onboardingView == nil else { return }
+        let guideView = UIView(frame: view.bounds)
+        guideView.backgroundColor = UIColor.black.withAlphaComponent(0.7)
+
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.frame = guideView.bounds
+        blurView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        blurView.alpha = 0.3
+        guideView.addSubview(blurView)
+        guideView.sendSubviewToBack(blurView)
+
+        let label = UILabel()
+        label.text = "오른쪽으로 슬라이드 하세요"
+        label.textColor = .white
+        label.font = .boldSystemFont(ofSize: 22)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        guideView.addSubview(label)
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: guideView.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: guideView.centerYAnchor, constant: -40)
+        ])
+
+        let fingerImageView = UIImageView()
+        if let fingerImage = UIImage(systemName: "hand.point.right.fill") {
+            fingerImageView.image = fingerImage
+            fingerImageView.tintColor = .white
+        }
+        fingerImageView.translatesAutoresizingMaskIntoConstraints = false
+        guideView.addSubview(fingerImageView)
+        NSLayoutConstraint.activate([
+            fingerImageView.widthAnchor.constraint(equalToConstant: 48),
+            fingerImageView.heightAnchor.constraint(equalToConstant: 48),
+            fingerImageView.centerXAnchor.constraint(equalTo: guideView.centerXAnchor),
+            fingerImageView.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 24)
+        ])
+
+        let moveDistance: CGFloat = 80
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            UIView.animateKeyframes(withDuration: 1.2, delay: 0, options: [.repeat, .autoreverse], animations: {
+                fingerImageView.transform = CGAffineTransform(translationX: moveDistance, y: 0)
+            }, completion: nil)
+        }
+
+        let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(didSwipeOnboarding))
+        swipeGesture.direction = .right
+        guideView.addGestureRecognizer(swipeGesture)
+
+        // 아무 곳이나 터치해도 가이드 종료
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapOnboarding))
+        guideView.addGestureRecognizer(tapGesture)
+
+        view.addSubview(guideView)
+        onboardingView = guideView
+    }
+
+    private func hideOnboardingGuide() {
+        print("[디버깅] PageNationViewController hideOnboardingGuide 호출")
+        UIView.animate(withDuration: 0.3, animations: {
+            self.onboardingView?.alpha = 0
+        }) { _ in
+            self.onboardingView?.removeFromSuperview()
+            self.onboardingView = nil
+        }
+    }
+
+    @objc private func didSwipeOnboarding() {
+        print("[디버깅] PageNationViewController didSwipeOnboarding 호출")
+        UserDefaultManager.hasSeenFirstPageOnboarding = true
+        hideOnboardingGuide()
+    }
+
+    @objc private func didTapOnboarding() {
+        print("[디버깅] PageNationViewController didTapOnboarding 호출")
+        UserDefaultManager.hasSeenFirstPageOnboarding = true
+        hideOnboardingGuide()
+    }
 }
 
 extension PageNationViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {

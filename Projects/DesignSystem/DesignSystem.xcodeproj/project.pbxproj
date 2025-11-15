@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		4A70FCBD6490227B914F0BD3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B986F61084D538252FF68FE8 /* Color.swift */; };
 		622533857E0A04FBCC5AD4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11519A6162870140692B04E6 /* Assets.xcassets */; };
 		6A41024A3C283ABCEEC8B5C3 /* UhBeeBEOJJIBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 210727DAD1241BAE44701D53 /* UhBeeBEOJJIBold.ttf */; };
+		75550F5D2128E0EFAC8DB93A /* TuistPlists+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB43949B0DAD3B788CBEBCD /* TuistPlists+DesignSystem.swift */; };
 		8081F39D126E336E23CD650E /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97DEE810CCC70A2646E9705 /* Reusable.swift */; };
 		82CFE746EE3B87C39B191D5E /* UhBeeBEOJJI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBBD9038A751195A9E9F298C /* UhBeeBEOJJI.ttf */; };
 		82E106CE9C755F5C1C9D0080 /* ThirdPartyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA9E89FEB58ADE454BF0BC5 /* ThirdPartyLibrary.framework */; };
@@ -69,12 +70,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		095B9A99B05C71119D941B09 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		095B9A99B05C71119D941B09 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		0EEDE689080917EDEDAB3B45 /* SimKyungha.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimKyungha.otf; sourceTree = "<group>"; };
 		11519A6162870140692B04E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1489E7809DA4DADA471C2CDC /* TuistFonts+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistFonts+DesignSystem.swift"; sourceTree = "<group>"; };
 		1CA9E89FEB58ADE454BF0BC5 /* ThirdPartyLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		210727DAD1241BAE44701D53 /* UhBeeBEOJJIBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhBeeBEOJJIBold.ttf; sourceTree = "<group>"; };
+		22C077DA34D44AA95A6A5342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		469F4B641DBB710B1B90BAD8 /* DesignSystemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DesignSystemTests-Info.plist"; sourceTree = "<group>"; };
 		518272FB82D2FA3AE57FF3B6 /* LeeSeoyun.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeeSeoyun.otf; sourceTree = "<group>"; };
 		662412BC116B0F0F76D8C6A9 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		BBBD9038A751195A9E9F298C /* UhBeeBEOJJI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhBeeBEOJJI.ttf; sourceTree = "<group>"; };
 		BC7E7A8936E709A82C18BAEB /* FontThema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontThema.swift; sourceTree = "<group>"; };
 		BE4AD9735556ECA8C8008FEC /* TuistBundle+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+DesignSystem.swift"; sourceTree = "<group>"; };
+		DEB43949B0DAD3B788CBEBCD /* TuistPlists+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistPlists+DesignSystem.swift"; sourceTree = "<group>"; };
 		DF0E6BE5B9FD961D44303FCC /* CircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
 		E2AE83F3E6C7699DE8B4B889 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		ECAFBD3892447294C1342932 /* DesignSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,6 +244,7 @@
 				2055E8D9D7E1CC1801402528 /* Asset */,
 				B26E41B36113DA07FB8E0185 /* Font */,
 				095B9A99B05C71119D941B09 /* .gitkeep */,
+				22C077DA34D44AA95A6A5342 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -278,6 +282,7 @@
 				A5263BC75B281154AC0B5A7B /* TuistAssets+DesignSystem.swift */,
 				BE4AD9735556ECA8C8008FEC /* TuistBundle+DesignSystem.swift */,
 				1489E7809DA4DADA471C2CDC /* TuistFonts+DesignSystem.swift */,
+				DEB43949B0DAD3B788CBEBCD /* TuistPlists+DesignSystem.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -402,6 +407,7 @@
 				ABB14811E13F7B1ECCF8B086 /* TuistAssets+DesignSystem.swift in Sources */,
 				F6018B5F7748E322214C52D6 /* TuistBundle+DesignSystem.swift in Sources */,
 				2C2A6F1B0843699ACFE53D23 /* TuistFonts+DesignSystem.swift in Sources */,
+				75550F5D2128E0EFAC8DB93A /* TuistPlists+DesignSystem.swift in Sources */,
 				B4015A93CC86F54C3B97724F /* BaseCollectionViewCell.swift in Sources */,
 				F98D30ECD0680DE9987728F1 /* BaseTableViewCell.swift in Sources */,
 				C80901BAEB8E2B031C9611F9 /* BaseView.swift in Sources */,
@@ -455,10 +461,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -485,10 +488,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;

@@ -75,6 +75,13 @@ extension SettingViewController: View {
             }
             .disposed(by: disposeBag)
         
+        reactor.pulse(\.$shouldNavigateToStatistics)
+            .observe(on: MainScheduler.instance)
+            .bind(with: self) { owner, _ in
+                owner.transition(StatisticsViewController(reactor: StatisticsReactor()), transitionStyle: .push)
+            }
+            .disposed(by: disposeBag)
+        
         reactor.pulse(\.$shouldNavigateToFont)
             .observe(on: MainScheduler.instance)
             .bind(with: self) { owner, _ in

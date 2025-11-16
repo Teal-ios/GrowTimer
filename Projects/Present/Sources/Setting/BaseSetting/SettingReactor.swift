@@ -26,13 +26,16 @@ final class SettingReactor: Reactor {
         case navigateToTime
         case navigateToThema
         case navigateToFont
+        case navigateToStatistics
     }
     
     struct State {
         @Pulse var shouldNavigateToTime: Void?
         @Pulse var shouldNavigateToThema: Void?
         @Pulse var shouldNavigateToFont: Void?
-        var settingList = ["집중 시간 설정", "테마 변경/구매", "폰트 변경/구매"]
+        @Pulse var shouldNavigateToStatistics: Void?
+
+        var settingList = ["집중 시간 설정", "집중시간 통계", "테마 변경/구매", "폰트 변경/구매"]
     }
     
     func mutate(action: Action) -> Observable<Mutation> {
@@ -43,9 +46,10 @@ final class SettingReactor: Reactor {
             case 0:
                 return .just(.navigateToTime)
             case 1:
-                return .just(.navigateToThema)
-
+                return .just(.navigateToStatistics)
             case 2:
+                return .just(.navigateToThema)
+            case 3:
                 return .just(.navigateToFont)
             default:
                 return .empty()
@@ -65,6 +69,9 @@ final class SettingReactor: Reactor {
             return state
         case .navigateToThema:
             state.shouldNavigateToThema = ()
+            return state
+        case .navigateToStatistics:
+            state.shouldNavigateToStatistics = ()
             return state
         }
     }

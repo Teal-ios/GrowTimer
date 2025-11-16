@@ -34,7 +34,7 @@ let project = Project(
                     ]
                 ],
                 "CFBundleShortVersionString": "1.1.4",
-                "CFBundleVersion": "1",
+                "CFBundleVersion": "11",
                 "CFBundleDisplayName": "GrowTimer"
             ]),
             sources: ["Sources/**"],

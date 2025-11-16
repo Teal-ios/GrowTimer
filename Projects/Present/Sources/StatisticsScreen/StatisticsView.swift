@@ -21,10 +21,8 @@ final class StatisticsView: BaseView {
         return view
     }()
     
-    // 커스텀 막대 차트 뷰 사용
     var barChartView: CustomBarChartView = {
         let view = CustomBarChartView()
-        // CustomBarChartView 내에서 배경색과 둥근 모서리를 처리합니다.
         return view
     }()
     

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04638706DA7FADC19660A52A /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0E74679B413FC9DB05994 /* BarChartView.swift */; };
 		095E65BF4F0BB5A4FED40148 /* ResetPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD7D9E76956F5DD3899498 /* ResetPopupView.swift */; };
 		16EB1B9748AA6C81BD222FB7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9EE53CC8DBF342766E6D04 /* SettingView.swift */; };
 		18DDA1ADBD5CCCCDF983D66C /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C41E394807CDF08440E5F /* CalendarTableViewCell.swift */; };
@@ -44,10 +45,13 @@
 		B14631EF68FBD1EAE650384E /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7796D897C437A44B52B0B980 /* TimeLineTableViewCell.swift */; };
 		B36D0BBA73AA70B5BD89CDE4 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556CCBFE7AB3747D6D5B5E45 /* TimeLineView.swift */; };
 		B68F14009C93E58952648F50 /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13315DC5DF3F122108735 /* TimeLineViewController.swift */; };
+		C3E611469325712253ABD559 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59D77A8C9F2D1036A791B4C /* StatisticsViewController.swift */; };
 		C877D8A243517ADDE48EDB05 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301E78B6C78DCB1F1CE0360 /* HomeViewController.swift */; };
 		D0C1A02A8E716F691B8FB360 /* FinishPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4D068CD814E87D6E8131A /* FinishPopupViewController.swift */; };
+		D3596C1319F4EBF78BB54FCF /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF1D7489A9DC5159D06475D /* StatisticsView.swift */; };
 		D5B07C77CFDDBDA2F1F4FB72 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B423D9E91F7BB2B6F728D /* FirstPageViewController.swift */; };
 		DE5045FF2468BB5740C595E7 /* ThemaSettingReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5C5D6130D1D9C2666EBC0 /* ThemaSettingReactor.swift */; };
+		DF0244A1409B9695FD8DF5EA /* StatisticsReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B5E55706A3D2F2E0BD012 /* StatisticsReactor.swift */; };
 		E59201368D9F35611751F0CA /* FinalPageReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A69C68CA654AC9E950D8CB7 /* FinalPageReactor.swift */; };
 		E68BBD764C3403E41A0D034E /* TimeSettingReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDFBCE8EC3B16A822A8905 /* TimeSettingReactor.swift */; };
 		E68DD14534DB63869D262D07 /* FinishPopupReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76449F338AC1B160D9460B45 /* FinishPopupReactor.swift */; };
@@ -97,6 +101,7 @@
 		0D2D46207E1ADFDD106FB5CF /* FinishPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishPopupView.swift; sourceTree = "<group>"; };
 		0E0EBB01F970CE0176D488F8 /* FirstPageReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageReactor.swift; sourceTree = "<group>"; };
 		1100DE22177688DC67CCA22B /* SettingReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingReactor.swift; sourceTree = "<group>"; };
+		180B5E55706A3D2F2E0BD012 /* StatisticsReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsReactor.swift; sourceTree = "<group>"; };
 		18DD7D9E76956F5DD3899498 /* ResetPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPopupView.swift; sourceTree = "<group>"; };
 		1B1E4216BBDE1F67FC8CD75B /* PresentModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentModule.swift; sourceTree = "<group>"; };
 		2396B2C3A4B644293BD14239 /* FinalPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalPageView.swift; sourceTree = "<group>"; };
@@ -117,6 +122,7 @@
 		7E03E4CD4D86D09D84B0BB0E /* FontSettingReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSettingReactor.swift; sourceTree = "<group>"; };
 		86B893EA8DE6C4F27EDE6CB7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		880C41E394807CDF08440E5F /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		8CF1D7489A9DC5159D06475D /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 		8D44CA97D6326CF0BA54BD7A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		8DA5C5D6130D1D9C2666EBC0 /* ThemaSettingReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemaSettingReactor.swift; sourceTree = "<group>"; };
 		8EEE2EF3723178F0A8E8D1A6 /* TimeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSettingViewController.swift; sourceTree = "<group>"; };
@@ -127,9 +133,11 @@
 		99F0A7049B195457EF376D5D /* HomeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReactor.swift; sourceTree = "<group>"; };
 		99F13315DC5DF3F122108735 /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 		A702C451212BDAE326AEF033 /* TuistBundle+Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Present.swift"; sourceTree = "<group>"; };
-		A7E94260B417790778DB2805 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A7E94260B417790778DB2805 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
 		ADE163D58325C4E483A55AB9 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C4D068CD814E87D6E8131A /* FinishPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishPopupViewController.swift; sourceTree = "<group>"; };
+		B59D77A8C9F2D1036A791B4C /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		BCD0E74679B413FC9DB05994 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		C32D99D1882333BF8AB13E34 /* PresentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PresentTests-Info.plist"; sourceTree = "<group>"; };
 		C9B2283464A201BFE668D300 /* TimeSettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSettingTableViewCell.swift; sourceTree = "<group>"; };
 		CC9EE53CC8DBF342766E6D04 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
@@ -143,10 +151,6 @@
 		F15075E8FBB656CAE3009E9B /* BaseDesignSettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignSettingTableViewCell.swift; sourceTree = "<group>"; };
 		FB716CEC57D3514E81B0069A /* PageNationReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNationReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B77142012EC98D1800C1CFAB /* StatisticsScreen */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = StatisticsScreen; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3F7C9318AD19E93AE41B0AA2 /* Frameworks */ = {
@@ -297,7 +301,6 @@
 		84623F64796DA00B51E3539E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B77142012EC98D1800C1CFAB /* StatisticsScreen */,
 				0616AE14C95F62BA77D9934C /* CalendarScreen */,
 				8C250FC200FAA4C9D51484B9 /* FinishPopupScreen */,
 				04EB4D823527095E29F93303 /* HomeScreen */,
@@ -305,6 +308,7 @@
 				81B64472E7AACCA81BC46595 /* PageNationScreen */,
 				743B2FA643882D325326DCCA /* ResetPopupScreen */,
 				2D091A065AE7199F5022D2B4 /* Setting */,
+				FAF9389D2F0AE8837BAD551C /* StatisticsScreen */,
 				C431D6F06EEF1CFB32D7F2E2 /* TimeLineScreen */,
 				1B1E4216BBDE1F67FC8CD75B /* PresentModule.swift */,
 			);
@@ -412,6 +416,17 @@
 			path = BaseSetting;
 			sourceTree = "<group>";
 		};
+		FAF9389D2F0AE8837BAD551C /* StatisticsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BCD0E74679B413FC9DB05994 /* BarChartView.swift */,
+				180B5E55706A3D2F2E0BD012 /* StatisticsReactor.swift */,
+				8CF1D7489A9DC5159D06475D /* StatisticsView.swift */,
+				B59D77A8C9F2D1036A791B4C /* StatisticsViewController.swift */,
+			);
+			path = StatisticsScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -427,9 +442,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				B77142012EC98D1800C1CFAB /* StatisticsScreen */,
 			);
 			name = Present;
 			packageProductDependencies = (
@@ -548,6 +560,10 @@
 				23E66DF358590CAD06892AF0 /* TimeSettingTableViewCell.swift in Sources */,
 				3B8B5A4F17625D7403C13E4D /* TimeSettingView.swift in Sources */,
 				5F8B105BEBE43060D6DD5BF1 /* TimeSettingViewController.swift in Sources */,
+				04638706DA7FADC19660A52A /* BarChartView.swift in Sources */,
+				DF0244A1409B9695FD8DF5EA /* StatisticsReactor.swift in Sources */,
+				D3596C1319F4EBF78BB54FCF /* StatisticsView.swift in Sources */,
+				C3E611469325712253ABD559 /* StatisticsViewController.swift in Sources */,
 				923433390C0417A13DEE35F4 /* TimeLineReactor.swift in Sources */,
 				B14631EF68FBD1EAE650384E /* TimeLineTableViewCell.swift in Sources */,
 				B36D0BBA73AA70B5BD89CDE4 /* TimeLineView.swift in Sources */,
@@ -591,7 +607,10 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -787,7 +806,10 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;

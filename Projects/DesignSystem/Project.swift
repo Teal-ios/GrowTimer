@@ -1,17 +1,11 @@
-//
-//  Project.swift
-//  AppManifests
-//
-//  Created by Den on 4/28/25.
-//
-
 import ProjectDescription
+
+
 
 let project = Project(
     name: "DesignSystem",
     organizationName: "Den",
     packages: [
-
     ],
     targets: [
         Target.target(
@@ -22,7 +16,10 @@ let project = Project(
             deploymentTargets: .iOS("16.0"),
             infoPlist: .default,
             sources: ["Sources/**"],
-            resources: ["Resources/**"],
+            resources: ["Resources/**/*.xcassets",
+                        "Resources/**/*.ttf",
+                        "Resources/**/*.otf",
+                       ],
             dependencies: [
                 .project(target: "ThirdPartyLibrary", path: "../ThirdPartyLibrary"),
             ],

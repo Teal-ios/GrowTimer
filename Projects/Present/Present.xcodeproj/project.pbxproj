@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -127,7 +127,7 @@
 		99F0A7049B195457EF376D5D /* HomeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReactor.swift; sourceTree = "<group>"; };
 		99F13315DC5DF3F122108735 /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 		A702C451212BDAE326AEF033 /* TuistBundle+Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Present.swift"; sourceTree = "<group>"; };
-		A7E94260B417790778DB2805 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		A7E94260B417790778DB2805 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		ADE163D58325C4E483A55AB9 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C4D068CD814E87D6E8131A /* FinishPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishPopupViewController.swift; sourceTree = "<group>"; };
 		C32D99D1882333BF8AB13E34 /* PresentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PresentTests-Info.plist"; sourceTree = "<group>"; };
@@ -143,6 +143,10 @@
 		F15075E8FBB656CAE3009E9B /* BaseDesignSettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignSettingTableViewCell.swift; sourceTree = "<group>"; };
 		FB716CEC57D3514E81B0069A /* PageNationReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNationReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B77142012EC98D1800C1CFAB /* StatisticsScreen */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = StatisticsScreen; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3F7C9318AD19E93AE41B0AA2 /* Frameworks */ = {
@@ -293,6 +297,7 @@
 		84623F64796DA00B51E3539E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B77142012EC98D1800C1CFAB /* StatisticsScreen */,
 				0616AE14C95F62BA77D9934C /* CalendarScreen */,
 				8C250FC200FAA4C9D51484B9 /* FinishPopupScreen */,
 				04EB4D823527095E29F93303 /* HomeScreen */,
@@ -422,6 +427,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B77142012EC98D1800C1CFAB /* StatisticsScreen */,
 			);
 			name = Present;
 			packageProductDependencies = (
@@ -583,10 +591,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -782,10 +787,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;

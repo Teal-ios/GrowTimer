@@ -70,7 +70,6 @@ final class StatisticsView: BaseView {
         [bgView, segmentedControl, sucessfulLabel, containChartView].forEach {
             self.addSubview($0)
         }
-        // 차트 뷰는 컨테이너 안에 추가
         containChartView.addSubview(barChartView)
     }
     
@@ -101,7 +100,6 @@ final class StatisticsView: BaseView {
             make.bottom.equalTo(sucessfulLabel.snp.top).offset(-28)
         }
         
-        // 차트 뷰는 컨테이너에 약간의 인셋을 주어 채웁니다.
         barChartView.snp.makeConstraints { make in
             make.edges.equalTo(containChartView).inset(4)
         }

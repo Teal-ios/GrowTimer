@@ -9,7 +9,7 @@
 import UIKit
 
 public enum ImageNameSpace {
-    static let appleTree = "apple-tree"
+    static let appleTree = "appleTree"
     static let apple = "apple"
     static let appletreeDie = "appletreeDie"
     static let blossom = "blossom"

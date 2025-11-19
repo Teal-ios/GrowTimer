@@ -16,7 +16,9 @@ let project = Project(
             deploymentTargets: .iOS("16.0"),
             infoPlist: .default,
             sources: ["Sources/**"],
-            resources: ["Resources/**/*.xcassets",
+            resources: [
+                        "Resources/Asset/**",
+                        "Resources/**/*.xcassets",
                         "Resources/**/*.ttf",
                         "Resources/**/*.otf",
                        ],

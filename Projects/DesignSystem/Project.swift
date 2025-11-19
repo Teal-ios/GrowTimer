@@ -17,8 +17,7 @@ let project = Project(
             infoPlist: .default,
             sources: ["Sources/**"],
             resources: [
-                        "Resources/Asset/**",
-                        "Resources/**/*.xcassets",
+                "Resources/Asset/Assets.xcassets",
                         "Resources/**/*.ttf",
                         "Resources/**/*.otf",
                        ],

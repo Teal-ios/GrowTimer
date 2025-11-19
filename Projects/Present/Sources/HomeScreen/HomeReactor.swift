@@ -148,8 +148,8 @@ final class HomeReactor: Reactor {
                 timer?.dispose() // 기존 타이머가 있다면 해제
                 
                 // 타이머 로직 수정 - Action을 직접 전달
-//                timer = Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance)
-                timer = Observable<Int>.interval(.milliseconds(10), scheduler: MainScheduler.instance)
+                timer = Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance)
+//                timer = Observable<Int>.interval(.milliseconds(10), scheduler: MainScheduler.instance)
                     .subscribe(onNext: { [weak self] _ in
                         guard let self = self else { return }
                         

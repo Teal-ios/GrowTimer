@@ -69,6 +69,7 @@ extension SettingViewController: View {
             .disposed(by: disposeBag)
         
         reactor.pulse(\.$shouldNavigateToTime)
+            .skip(1)
             .observe(on: MainScheduler.instance)
             .bind(with: self) { owner, _ in
                 owner.transition(TimeSettingViewController(reactor: TimeSettingReactor(delegate: nil)), transitionStyle: .push)
@@ -76,6 +77,7 @@ extension SettingViewController: View {
             .disposed(by: disposeBag)
         
         reactor.pulse(\.$shouldNavigateToStatistics)
+            .skip(1)
             .observe(on: MainScheduler.instance)
             .bind(with: self) { owner, _ in
                 owner.transition(StatisticsViewController(reactor: StatisticsReactor()), transitionStyle: .push)
@@ -83,6 +85,7 @@ extension SettingViewController: View {
             .disposed(by: disposeBag)
         
         reactor.pulse(\.$shouldNavigateToFont)
+            .skip(1)
             .observe(on: MainScheduler.instance)
             .bind(with: self) { owner, _ in
                 owner.transition(FontSettingViewController(reactor: FontSettingReactor()), transitionStyle: .push)
@@ -91,6 +94,7 @@ extension SettingViewController: View {
 
         
         reactor.pulse(\.$shouldNavigateToThema)
+            .skip(1)
             .observe(on: MainScheduler.instance)
             .bind(with: self) { owner, _ in
                 owner.transition(ThemaSettingViewController(reactor: ThemaSettingReactor()), transitionStyle: .push)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-fileprivate enum ImageNameSpace {
+public enum ImageNameSpace {
     static let appleTree = "apple-tree"
     static let apple = "apple"
     static let appletreeDie = "appletreeDie"
@@ -17,6 +17,7 @@ fileprivate enum ImageNameSpace {
     static let seeds = "seeds"
     static let sprout = "sprout"
 }
+
 public extension UIImage {
     static var appleTree: UIImage {
         UIImage(named: ImageNameSpace.appleTree, in: Bundle.module, compatibleWith: nil) ?? UIImage(systemName: "heart.fill")!
